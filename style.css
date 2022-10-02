@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+
+*{
+    font-family: 'Fredoka', sans-serif;
+}
+
+.body{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1{
+
+    text-align: center;
+    margin: 20px;
+    padding-top: 40px;
+
+}
+.principal{
+    /* background: white; */
+    border-radius: 10px;
+    /* border: 2px  rgb(53, 163, 53) dashed; */
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+.principal div{
+    /* border: 2px rgb(44, 245, 44) dashed; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* height: 50px; */
+    width: 250px;
+
+}
+.principal input{
+    outline:none;
+    border-radius: 10px;
+    height: 40px;
+    /* border: 2px  whitesmoke inset  ; */
+    /* border-style: ; */
+    border: none;
+    margin: 3px;
+
+    background-color: white;
+    /* color: white; */
+    box-shadow: 1px 5px 10px rgba(0, 0, 0,.2);
+    padding-left: 20px;
+    border-bottom: 2px solid gray;
+    
+    font-size: 20px;
+}
+.principal p{
+    margin: 0;
+    padding: 2px;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.bots{
+
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.bots button {
+
+  /* background: red; */
+  padding: 15px;
+  margin: 20px;
+  width: 250px;
+  border-radius: 10px ;
+  border: none;
+  transition: .25s;
+
+}
+
+.bots button:active {
+
+    transition: .25s;
+   
+    transform: scale(.9)
+
+}
+
+ion-icon {
+
+    /* transition: .25s; */
+    background: rgba(0, 0, 0, .1);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 100px;
+    transform: scale(1.1);
+    transition: .5s;
+    
+}
+ion-icon:active {
+
+    transition: .5s;
+    transform: scale(.8)
+    
+}
+a { 
+
+color: black;
+
+}

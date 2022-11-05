@@ -1,8 +1,25 @@
 
+var First = false
 
+try {
+ First = localStorage.getItem('First') || false;
+    console.log(First)
+} catch (error) {
+    
+}
+if(First=="false"){
+    localStorage.setItem('First', true);
+
+    Swal.fire({
+        title: 'Alerta',
+        text: "Nesesita tener conocimientos Sobre Los sistemas Numericos Hexadecimal y Binario Para usar esta aplicacion web",
+        icon: 'warning',
+    })
+
+}
 
 function funcion(){
-
+    
     numero= document.getElementById("tomardato").value.replaceAll("1","").replaceAll("0","")
     var expreg = /[0-1]+/g;
 if(  expreg.test(numero) || ( numero == "" && document.getElementById("tomardato").value != "" )) {
@@ -71,3 +88,13 @@ numeroFinal = numeroFinal.map(function(element, index, array){
 
 
 
+window.addEventListener('beforeunload', function (e) {
+    localStorage.setItem('First', false);
+});
+setInterval(() => {
+  
+   
+    document.getElementById("tomardato").value = ""+document.getElementById("tomardato").value.replaceAll("e","")
+    
+    
+}, -100);

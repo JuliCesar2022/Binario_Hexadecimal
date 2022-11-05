@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="/icono.png" />
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de Binario a Hexadecimal</title>
  
 
 </head>
@@ -15,16 +16,19 @@
     <form onsubmit="return false">
 <div class="principal">
     <div class="input1">
-       <p>Ingrese el numero</p>
+       <p>Ingrese el numero binario </p>
       
-        <input type="number" class="inputs" id="tomardato" pattern="[0-1]+"  placeholder="numero binario">
+        <input type="number" class="inputs" id="tomardato" pattern="[0-1]+"  placeholder="1010">
   
 </div>
 
-<a href="hexadecimal.html"    > <ion-icon name="swap-vertical-outline"></ion-icon></a>
+<a href="hexadecimal.html" title="invertir sistemas numericos ">
+    <div class="tope" title="invertir sistemas numericos "></div>
+    <ion-icon  name="swap-vertical-outline" ></ion-icon>
+</a>
 
 <div class="input2">
-    <p>Resultado</p>
+    <p>Numero Hexadecimal</p>
     <input type="text" id="input2" class="inputs2" readonly >
 </div>
 
@@ -35,11 +39,11 @@
 </div>
 </form>
 
-    <script src="index.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <script src="index.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 </body>

@@ -40,3 +40,4 @@ document.getElementById("input2").value = suma
   })
 }
 }
+localStorage.setItem('First', true);

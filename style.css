@@ -120,3 +120,11 @@ a {
 color: black;
 
 }
+
+.tope{
+    position: absolute;
+    background: transparent;
+    height: 40px;
+    max-width: 40px;
+    z-index: 1;
+}
